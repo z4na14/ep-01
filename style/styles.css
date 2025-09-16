@@ -25,7 +25,7 @@ header {
 
 #language_selector {
     border: 2px solid black;
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
     box-shadow: 3px 3px 0 black;
     margin-left: 20px;

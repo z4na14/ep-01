@@ -1,0 +1,37 @@
+.align_all_items_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    margin: 20px;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+#site_title {
+    margin-right: auto;
+}
+
+#site_shortcuts {
+    display: flex;
+}
+
+#site_shortcuts div {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#language_selector {
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 3px 3px 0 black;
+    margin-left: 20px;
+}
+
+#language_selector > div {
+    border-right: 2px solid black;
+    padding: 8px;
+}

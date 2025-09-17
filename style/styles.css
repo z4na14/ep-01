@@ -1,12 +1,37 @@
+:root {
+    --font: Fira Sans;
+    --foreground-1: lightgray; /* Text */
+    --foreground-2: rgb(0, 0, 0); /* Elements */
+    --foreground-3: rgb(0, 0, 0); /* Borders */
+    --background-1: lightgray;
+    --background-2: lightgray;
+}
+
+html, body {
+    font-family: var(--font), sans-serif;
+}
+
+label {
+    display: block;
+}
+
+/*** Global classes ***/
 .align_all_items_center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.box_shadow_background {
+    box-shadow: 3px 3px 0 var(--foreground-2);
+    border-radius: 10px;
+    border: 3px var(--foreground-3) solid;
+}
+
+/*** Header ***/
 header {
     margin: 20px;
-    border: 2px solid black;
+    border: 3px solid var(--foreground-3);
     padding: 20px;
 }
 
@@ -24,14 +49,40 @@ header {
 }
 
 #language_selector {
-    border: 2px solid black;
-    border-radius: 10px;
     display: flex;
-    box-shadow: 3px 3px 0 black;
     margin-left: 20px;
 }
 
 #language_selector > div {
-    border-right: 2px solid black;
+    border-right: 2px solid var(--foreground-3);;
     padding: 8px;
+}
+
+
+/*** Main section ***/
+#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Main elements */
+#main_content {
+    width: 66%;
+}
+
+/* Log field */
+#log_field {
+    flex-direction: column;
+    width: 33%;
+}
+
+.flex_input_elements {
+    margin: 0.8vw 1.8vw 0.8vw 1.8vw;
+    height: 50px;
+    min-width: 100%;
+}
+
+#recordar_checkbox {
+    box-shadow: 1px 1px 0 var(--foreground-2);
 }

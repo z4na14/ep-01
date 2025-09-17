@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="style/styles.css">
     <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
 
 <body>
@@ -16,7 +18,7 @@
     <header class="align_all_items_center">
         <div id="site_title">Mochileros sin fronteras</div>
         <div id="site_shortcuts">
-            <div>Inicion</div>
+            <div>Inicio</div>
             <div>Experiencias</div>
             <div>Consejos</div>
             <div>Foro</div>
@@ -24,21 +26,45 @@
         </div>
         <div class="align_all_items_center" style="margin-left: auto">
             <img src="images/logo.png" alt="logo">
-            <div id="language_selector" class="align_all_items_center">
+            <div id="language_selector" class="align_all_items_center box_shadow_background">
                 <div>ES</div>
                 <span class="material-icons">arrow_drop_down</span>
             </div>
         </div>
     </header>
 
-    <section>
+    <section id="main">
+        <div id="main_content" class="align_all_items_center">
+            <article>
+            </article>
+
+            <article>
+            </article>
+
+            <article>
+            </article>
+        </div>
+
+        <aside id="log_field" class="align_all_items_center">
+            <form style="width: 60%">
+                <label class="align_all_items_center" style="width: 100%">
+                    <input type="text" placeholder="Usuario" class="flex_input_elements box_shadow_background">
+                </label>
+                <label class="align_all_items_center" style="width: 100%">
+                    <input type="password" placeholder="Contraseña" class="flex_input_elements box_shadow_background">
+                </label>
+                <label style="margin-top: 15px;">
+                    <input type="checkbox" id="recordar_checkbox" class="box_shadow_background">
+                    Recordar mis credenciales
+                </label>
+            </form>
+        </aside>
     </section>
 
-    <section>
-    </section>
 
-    <section>
-    </section>
+
+    <footer>
+    </footer>
 
 </body>
 </html>

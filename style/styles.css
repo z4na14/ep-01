@@ -28,6 +28,19 @@ label {
     border: 3px var(--foreground-3) solid;
 }
 
+.background_image{
+    background-image: url("/images/viajar_de_mochilero.jpg");
+    width: 500px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.foreground_text {
+    background: white;
+}
+
 /*** Header ***/
 header {
     margin: 20px;
@@ -69,6 +82,8 @@ header {
 /* Main elements */
 #main_content {
     width: 66%;
+    padding: 0%;
+    flex-direction: column;
 }
 
 /* Log field */

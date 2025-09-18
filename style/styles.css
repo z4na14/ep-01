@@ -3,7 +3,7 @@
     --foreground-1: lightgray; /* Text */
     --foreground-2: rgb(0, 0, 0); /* Elements */
     --foreground-3: rgb(0, 0, 0); /* Borders */
-    --background-1: lightgray;
+    --background-1: rgb(255, 255, 255);
     --background-2: lightgray;
 }
 
@@ -28,17 +28,8 @@ label {
     border: 3px var(--foreground-3) solid;
 }
 
-.background_image{
-    background-image: url("/images/viajar_de_mochilero.jpg");
-    width: 500px;
-    height: 150px;
-    background-size: cover;
-    background-position: center;
-
-}
-
 .foreground_text {
-    background: white;
+    background: var(--background-1);
 }
 
 /*** Header ***/
@@ -76,14 +67,22 @@ header {
 #main {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
+    margin: 20px;
 }
 
 /* Main elements */
 #main_content {
     width: 66%;
-    padding: 0%;
     flex-direction: column;
+}
+
+#main_heading {
+    background-image: url('/images/viajar_de_mochilero.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 30vh;
 }
 
 /* Log field */

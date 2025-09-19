@@ -16,6 +16,11 @@ label {
     display: block;
 }
 
+hr {
+    width: 60%;
+    background-color: var(--foreground-3);
+}
+
 /*** Global classes ***/
 .align_all_items_center {
     display: flex;
@@ -25,6 +30,7 @@ label {
 
 .box_shadow_background {
     box-shadow: 3px 4px 0 var(--foreground-2);
+    background-color: var(--background-1);
     border-radius: 10px;
     border: 3px var(--foreground-3) solid;
 }
@@ -36,8 +42,8 @@ label {
 
 .foreground_text {
     background: var(--background-1);
-    padding-left: 50px;
-    padding-right: 50px;
+    text-align: left;
+    display: inline-block;
 }
 
 /*** Header ***/
@@ -106,40 +112,63 @@ header {
     border-radius: 10px;
 }
 
+#images_carrousel p {
+    width: 100%;
+    margin: auto 30px;
+}
+
 .nav_button {
-    padding: 10px;
+    padding: 2px;
+}
+
+.nav_button > span {
+    font-size: 30px; !important;
 }
 
 #scroll_experiences {
-     display: flex;
-     flex-direction: column;
-    justify-content: flex-start;
-     min-width: 88%;
-     margin-top: 20px;
-     margin-bottom: 20px;
-     background-image: url('/images/andorra.webp');
-     background-size: cover;
-     background-position: center;
-     height: 300px;
-     border-radius: 10px;
- }
+    display: flex;
+    flex-direction: column;
+    /*justify-content: flex-start;*/
+    min-width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url('/images/andorra.webp');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border-radius: 10px;
+}
+
+#scroll_experiences div {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #experiences_title {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+    width: 100%;
 }
 
 #experiences_description {
-    width: 60%;
     margin-right: auto;
     margin-left: 30px;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 #buy_button {
     margin: auto 40px 30px auto;
-    width: 50px;
+}
+
+#buy_button p {
+    text-align: center;
 }
 
 /* Log field */
@@ -151,7 +180,12 @@ header {
 
 #log_field {
     margin-top: 50px;
-    min-width: 80%;
+    min-width: 95%;
+}
+
+#log_field > form {
+    width: 100%;
+    margin: 10px 50px;
 }
 
 .flex_input_elements {
@@ -162,9 +196,34 @@ header {
 
 #recordar_checkbox {
     box-shadow: 1px 1px 0 var(--foreground-2);
+    transform: scale(1.5);
+    margin-right: 20px;
 }
 
-/*footer*/
+.submit_user {
+    margin: 20px 0;
+    height: 50px;
+    width: 50%;
+}
+
+#top_recommended {
+    margin: auto 50px;
+    min-width: 95%;
+    flex-direction: column; !important;
+    padding: 30px;
+}
+
+#top_recommended div {
+    width: 100%;
+}
+
+#top_recommended div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*** Footer ***/
 footer {
     margin-top: 5px;
     margin-left: 40px;
@@ -185,3 +244,9 @@ footer {
     margin-left: 25%;
     margin-right: 30%;
 }
+
+/* Pal media query
+.nav_button > span {
+    font-size: 30px; !important;
+}
+*/

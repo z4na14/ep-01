@@ -1,6 +1,6 @@
 :root {
     --font: Fira Sans;
-    --foreground-1: lightgray; /* Text */
+    --foreground-1: rgb(0, 0, 0); /* Text */
     --foreground-2: rgb(0, 0, 0); /* Elements */
     --foreground-3: rgb(0, 0, 0); /* Borders */
     --background-1: rgb(255, 255, 255);
@@ -9,6 +9,7 @@
 
 html, body {
     font-family: var(--font), sans-serif;
+    color: var(--foreground-1);
 }
 
 label {
@@ -23,13 +24,20 @@ label {
 }
 
 .box_shadow_background {
-    box-shadow: 3px 3px 0 var(--foreground-2);
+    box-shadow: 3px 4px 0 var(--foreground-2);
+    border-radius: 10px;
+    border: 3px var(--foreground-3) solid;
+}
+
+.simple_box_border {
     border-radius: 10px;
     border: 3px var(--foreground-3) solid;
 }
 
 .foreground_text {
     background: var(--background-1);
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 /*** Header ***/
@@ -67,8 +75,7 @@ header {
 #main {
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    margin: 20px;
+    margin: 40px;
 }
 
 /* Main elements */
@@ -77,22 +84,74 @@ header {
     flex-direction: column;
 }
 
+#main_content article {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 #main_heading {
     background-image: url('/images/viajar_de_mochilero.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     width: 100%;
-    height: 200px;
+    height: 300px;
+    border-radius: 10px;
 }
 
-#partial_width_box {
-    width: 75%;
+#images_carrousel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 3px solid var(--foreground-3);
+    border-radius: 10px;
+}
+
+.nav_button {
+    padding: 10px;
+}
+
+#scroll_experiences {
+     display: flex;
+     flex-direction: column;
+    justify-content: flex-start;
+     min-width: 88%;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     background-image: url('/images/andorra.webp');
+     background-size: cover;
+     background-position: center;
+     height: 300px;
+     border-radius: 10px;
+ }
+
+#experiences_title {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+#experiences_description {
+    width: 60%;
+    margin-right: auto;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#buy_button {
+    margin: auto 40px 30px auto;
+    width: 50px;
 }
 
 /* Log field */
-#log_field {
+#aside_section {
     flex-direction: column;
-    width: 33%;
+    min-width: 33%;
+    justify-content: flex-start;
+}
+
+#log_field {
+    margin-top: 50px;
+    min-width: 80%;
 }
 
 .flex_input_elements {

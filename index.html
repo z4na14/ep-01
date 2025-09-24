@@ -25,7 +25,7 @@
             <div>Contacto</div>
         </div>
         <div class="align_all_items_center" style="margin-left: auto">
-            <img src="images/Tenna_kick_.webp" alt="logo" style="width: 60px;">
+            <img src="images/Dud.webp" alt="logo" style="width: 60px;">
             <div id="language_selector" class="align_all_items_center box_shadow_background">
                 <div>ES</div>
                 <span class="material-icons">arrow_drop_down</span>
@@ -38,7 +38,6 @@
             <article id="main_heading" class="align_all_items_center">
                 <div class="foreground_text align_all_items_center simple_box_border">
                     <h4>Comparte y descubre viajes mochileros de larga distancia</h4>
-                    <img src="images/Dud.webp" alt="dud" style="width: 10px; margin-left: 10px">
                 </div>
             </article>
 
@@ -74,17 +73,17 @@
                 </div>
             </article>
 
-            <article id="grid">
-                <div id="grid_title">
+            <article id="experiences_grid">
+                <div id="experiences_grid_title">
                     <h2>Experiencias de la comunidad mochilera</h2>
                 </div>
-                <div id="container">
-                    <div class="individual_container">
-                        <div class="title_container">
+                <div id="experiences_container">
+                    <div class="experience_shortcut">
+                        <div class="shortcut_title">
                             <b>Hostal en Katmandú</b>
                         </div>
                         <img src="images/Katmandu.webp" alt="Katmandu" class="images_grid">
-                        <div class="right_container">
+                        <div class="right_nav_shortcut">
                             <div class="nav_button align_all_items_center">
                                 <span class="material-icons">favorite</span>
                             </div>
@@ -93,12 +92,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="individual_container">
-                        <div class="title_container">
+                    <div class="experience_shortcut">
+                        <div class="shortcut_title">
                             <b>Sudamérica en bus</b>
                         </div>
                         <img src="images/Iguazu.jpg" alt="Cataratas del Iguazu" class="images_grid">
-                        <div class="right_container">
+                        <div class="right_nav_shortcut">
                             <div class="nav_button align_all_items_center">
                                 <span class="material-icons">favorite</span>
                             </div>
@@ -107,12 +106,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="individual_container">
-                        <div class="title_container">
+                    <div class="experience_shortcut">
+                        <div class="shortcut_title">
                             <b>Visado para india</b>
                         </div>
                         <img src="images/india.jpg" alt="Taj Mahal" class="images_grid">
-                        <div class="right_container">
+                        <div class="right_nav_shortcut">
                             <div class="nav_button align_all_items_center">
                                 <span class="material-icons">favorite</span>
                             </div>
@@ -121,12 +120,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="individual_container">
-                        <div class="title_container">
+                    <div class="experience_shortcut">
+                        <div class="shortcut_title">
                             <b>Vietnam, ruta en moto</b>
                         </div>
                         <img src="images/vietnam.jpeg" alt="Lago en Vietnam" class="images_grid">
-                        <div class="right_container">
+                        <div class="right_nav_shortcut">
                             <div class="nav_button align_all_items_center">
                                 <span class="material-icons">favorite</span>
                             </div>
@@ -135,12 +134,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="individual_container">
-                        <div class="title_container">
+                    <div class="experience_shortcut">
+                        <div class="shortcut_title">
                             <b>Trekking en Perú</b>
                         </div>
                         <img src="images/Machu_Picchu.jpg" alt="Machu Picchu" class="images_grid">
-                        <div class="right_container">
+                        <div class="right_nav_shortcut">
                             <div class="nav_button align_all_items_center">
                                 <span class="material-icons">favorite</span>
                             </div>
@@ -149,12 +148,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="individual_container">
-                        <div class="title_container">
+                    <div class="experience_shortcut">
+                        <div class="shortcut_title">
                             <b>Safari en Tanzania</b>
                         </div>
                         <img src="images/que-hacer-tanzania.webp" alt="Globos aerostáticos en Tanzania" class="images_grid">
-                        <div class="right_container">
+                        <div class="right_nav_shortcut">
                             <div class="nav_button align_all_items_center">
                                 <span class="material-icons">favorite</span>
                             </div>
@@ -216,7 +215,7 @@
                     <a>Barcelona · 25/10</a>
                     <a>Valencia · 08/11</a>
                 </div>
-
+                <img src="images/tenna.gif" alt="logo" style="width: 120px;margin-top: 100px">
             </div>
         </aside>
     </section>
@@ -224,27 +223,33 @@
 
 
     <footer class="align_all_items_center">
-        <div class="align_all_items_center" id=left_footer">
-            <p>@2025 mochileros sin fronteras</p>
+        <div id="left_footer">
+            <p>© 2025 mochileros sin fronteras</p>
         </div>
         <div id="center_footer" class="align_all_items_center">
             <p>Sobre nosotros. Política de Privacidad. Ayuda</p>
+            <form class="align_all_items_center" id="newsletter_form">
+                <label><input type="email" placeholder="Email"
+                              class="box_shadow_background"></label>
+                <label style="margin: 0 20px"><input type="submit" value="Subscribete a nuestras newsletter"
+                              class="box_shadow_background"></label>
+            </form>
         </div>
         <div class="align_all_items_center" style="margin-left: auto; margin-right: 10px;"> 
             <a href="https://www.instagram.com/" target="_blank">
-                <img src="/images/icons/Instagram.png"
+                <img src="/images/icons/instagram.png"
                 alt="Logo de Instagram"
-                style="width: 40px; height: 40px;">
+                style="height: 55px; margin: 10px">
             </a>
             <a href="https://www.tiktok.com/explore" target="_blank">
-                <img src="/images/icons/Tiktok.png"
+                <img src="/images/icons/tiktok.png"
                 alt="Logo de TikTok"
-                style="width: 40px; height: 40px;">
+                style="height: 55px; margin: 10px">
             </a>
             <a href="https://youtu.be/fHPysRp8FWg?si=qZZO_LRgjP2ic3f_" target="_blank">
-                <img src="/images/icons/Youtube_logo.png"
+                <img src="/images/icons/youtube.png"
                 alt="Logo de Youtube"
-                style="width: 40px;  height: 40px;">
+                style="height: 60px; margin: 10px">
             </a>
         </div>
     </footer>

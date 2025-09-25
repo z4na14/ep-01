@@ -1,10 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Mochileros sin fronteras</title>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="style/register.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
+    <header class="align_all_items_center">
+        <div id="site_title">Mochileros sin fronteras</div>
+        <div id="site_shortcuts">
+            <div>Inicio</div>
+            <div>Experiencias</div>
+            <div>Consejos</div>
+            <div>Foro</div>
+            <div>Contacto</div>
+        </div>
+        <div class="align_all_items_center" style="margin-left: auto">
+            <img src="images/Dud.webp" alt="logo" style="width: 60px;">
+            <div id="language_selector" class="align_all_items_center box_shadow_background">
+                <div>ES</div>
+                <span class="material-icons">arrow_drop_down</span>
+            </div>
+        </div>
+    </header>
+
+    <article id="main" class="align_all_items_center">
+        <h1>Registro de nuevos usuarios</h1>
+        <section id="personal_data_grid">
+            <div class="box_shadow_background data_grid_box">
+                <label>
+                    <input type="text" placeholder="Nombre">
+                </label>
+            </div>
+            <label>
+                <input type="text" placeholder="Apellidos" class="box_shadow_background">
+            </label>
+            <label>
+                <input type="text" placeholder="Correo Electrónico" class="box_shadow_background">
+            </label>
+            <label>
+                <input type="text" placeholder="Confirmar Correo" class="box_shadow_background">
+            </label>
+        </section>
+    </article>
+    
+    <footer class="align_all_items_center">
+        <div id="left_footer">
+            <p>© 2025 mochileros sin fronteras</p>
+        </div>
+        <div id="center_footer" class="align_all_items_center">
+            <p>Sobre nosotros. Política de Privacidad. Ayuda</p>
+            <form class="align_all_items_center" id="newsletter_form">
+                <label><input type="email" placeholder="Email"
+                              class="box_shadow_background"></label>
+                <label style="margin: 0 20px"><input type="submit" value="Subscribete a nuestras newsletter"
+                              class="box_shadow_background"></label>
+            </form>
+        </div>
+        <div class="align_all_items_center" style="margin-left: auto; margin-right: 10px;"> 
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="/images/icons/instagram.png"
+                alt="Logo de Instagram"
+                style="height: 55px; margin: 10px">
+            </a>
+            <a href="https://www.tiktok.com/explore" target="_blank">
+                <img src="/images/icons/tiktok.png"
+                alt="Logo de TikTok"
+                style="height: 55px; margin: 10px">
+            </a>
+            <a href="https://youtu.be/fHPysRp8FWg?si=qZZO_LRgjP2ic3f_" target="_blank">
+                <img src="/images/icons/youtube.png"
+                alt="Logo de Youtube"
+                style="height: 60px; margin: 10px">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>

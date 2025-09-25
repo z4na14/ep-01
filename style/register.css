@@ -1,0 +1,129 @@
+:root {
+    --font: Fira Sans;
+    --foreground-1: rgb(0, 0, 0); /* Text */
+    --foreground-2: rgb(0, 0, 0); /* Elements */
+    --foreground-3: rgb(0, 0, 0); /* Borders */
+    --background-1: rgb(255, 255, 255);
+    --background-2: lightgray;
+}
+
+html, body {
+    font-family: var(--font), sans-serif;
+    color: var(--foreground-1);
+}
+
+label {
+    display: block;
+}
+
+hr {
+    width: 60%;
+    background-color: var(--foreground-3);
+}
+
+/*** Global classes ***/
+.align_all_items_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_shadow_background {
+    box-shadow: 3px 4px 0 var(--foreground-2);
+    background-color: var(--background-1);
+    border-radius: 10px;
+    border: 3px var(--foreground-3) solid;
+}
+
+/*** Header ***/
+header {
+    margin: 20px;
+    border: 3px solid var(--foreground-3);
+    padding: 20px;
+}
+
+#site_title {
+    margin-right: auto;
+}
+
+#site_shortcuts {
+    display: flex;
+}
+
+#site_shortcuts div {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#language_selector {
+    display: flex;
+    margin-left: 20px;
+}
+
+#language_selector > div {
+    border-right: 2px solid var(--foreground-3);;
+    padding: 8px;
+}
+
+/*** Main section ***/
+#main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 20px;
+    margin-bottom: 60 px;
+    border: 3px solid var(--foreground-3);
+    border-radius: 10px;
+}
+
+#personal_data_grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.data_grid_box {
+    height: 20px;
+    width: 20%;
+    border-radius: 10px;
+}
+
+
+/*** Footer ***/
+footer {
+    margin-top: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 3px solid var(--foreground-3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#left_footer {
+    margin-right: auto;
+    margin-left: 20px;
+    padding-left: 20px;
+    width: 190px;
+}
+
+#center_footer {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#newsletter_form {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 30px 0;
+}
+
+#newsletter_form label input {
+    margin: 0;
+}

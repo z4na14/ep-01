@@ -21,6 +21,26 @@ hr {
     background-color: var(--foreground-3);
 }
 
+a:link {
+    color: var(--foreground-1);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--foreground-1);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--foreground-1);
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--foreground-1);
+    text-decoration: none;
+}
+
 /*** Global classes ***/
 .align_all_items_center {
     display: flex;
@@ -64,6 +84,10 @@ header {
 #site_shortcuts div {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+#logo {
+    margin: 0 0 0 auto;
 }
 
 #language_selector {
@@ -330,6 +354,23 @@ footer {
 
 @media (max-width: 1024px) {
 
+    header {
+        flex-direction: column;
+        margin: 10vw
+    }
+
+    header > div {
+        margin: 10px auto 10px 0; !important;
+    }
+
+    #logo {
+        margin: 20px auto 20px 5px;
+    }
+
+    #site_shortcuts {
+        flex-direction: column;
+    }
+
     #main {
         display: flex;
         flex-direction: column;
@@ -341,5 +382,11 @@ footer {
 
     #aside_section {
         width: 100%;
+    }
+}
+
+@media (min-width: 1920px) {
+    header {
+        flex-direction: row;
     }
 }

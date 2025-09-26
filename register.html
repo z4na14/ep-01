@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header class="align_all_items_center">
+    <header class="align_all_items_center" style="border-radius: 10px;">
         <div id="site_title">Mochileros sin fronteras</div>
         <div id="site_shortcuts">
             <div>Inicio</div>
@@ -34,21 +34,61 @@
 
     <article id="main" class="align_all_items_center">
         <h1>Registro de nuevos usuarios</h1>
-        <section id="personal_data_grid">
-            <label>
+        <form id="personal_data_grid">
+            <label class="align_all_items_center">
                 <input type="text" placeholder="Nombre" class="box_shadow_background data_box">
             </label>
-            <label>
+            <label class="align_all_items_center">
                 <input type="text" placeholder="Apellidos" class="box_shadow_background data_box">
             </label>
-            <label>
+            <label class="align_all_items_center">
                 <input type="text" placeholder="Correo Electrónico" class="box_shadow_background data_box">
             </label>
-            <label>
+            <label class="align_all_items_center">
                 <input type="text" placeholder="Confirmar Correo" class="box_shadow_background data_box">
+            </label>
+        </form>
+
+        <section id="birthday">
+            <h4 style="margin-left: 20px; margin-bottom: 10px;">Fecha de nacimiento</h4>
+            <label>
+                <input type="date" style="margin-left: 50px; margin-top: 5px; height: 40px; width: 25%;">
+            </label>
+        </section>
+
+        <hr>
+
+        <form id="login">
+            <label class="align_all_items_center" style="margin-left: 40px; margin-right: 20px; width: 40%;">
+                <input type="text" placeholder="Login" class="box_shadow_background login_box">
+            </label>
+            <label class="align_all_items_center" style= "width: 40%;">
+                <input type="text" placeholder="Contraseña" class="box_shadow_background login_box" style="margin-left: 40px">
+            </label>
+        </form>
+
+        <section id="checkbox">
+            <label style="height: 40px; width: 100%; display:flex; align-items: center;">
+                <input type="checkbox" style="height: 30px; width: 30px; margin-left: 20px;"> 
+                <p style="margin-left: 10px;">
+                    Acepto la 
+                    <a href="https://policies.google.com/privacy?hl=es" 
+                    target="_blank"> Política de Privacidad
+                    </a>
+                </p>
+            </label>
+        </section>
+
+        <section id="save_box">
+            <label id="confirm" class="align_all_items_center box_shadow_background">
+                <a href="/main-registered.html" target="_blank" style="width: 100%; height: 100%;" class="align_all_items_center" id="font_box">
+                    Guardar datos y acceder
+                </a>
             </label>
         </section>
     </article>
+
+
     
     <footer class="align_all_items_center">
         <div id="left_footer">
@@ -56,12 +96,6 @@
         </div>
         <div id="center_footer" class="align_all_items_center">
             <p>Sobre nosotros. Política de Privacidad. Ayuda</p>
-            <form class="align_all_items_center" id="newsletter_form">
-                <label><input type="email" placeholder="Email"
-                              class="box_shadow_background"></label>
-                <label style="margin: 0 20px"><input type="submit" value="Subscribete a nuestras newsletter"
-                              class="box_shadow_background"></label>
-            </form>
         </div>
         <div class="align_all_items_center" style="margin-left: auto; margin-right: 10px;"> 
             <a href="https://www.instagram.com/" target="_blank">

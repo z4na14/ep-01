@@ -85,12 +85,22 @@ header {
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .data_grid_box {
     height: 20px;
     width: 20%;
     border-radius: 10px;
+}
+
+.data_box {
+    height: 50px;
+    width: 70%;
+}
+
+#personal_data_grid input {
+    width: 100%;
 }
 
 

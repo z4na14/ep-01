@@ -151,7 +151,7 @@ header {
 }
 
 .nav_button > span {
-    font-size: 30px; !important;
+    font-size: 30px !important;
 }
 
 #scroll_experiences {
@@ -347,9 +347,7 @@ footer {
 }
 
 /* Pal media query
-.nav_button > span {
-    font-size: 30px; !important;
-}
+
 */
 
 @media (max-width: 1024px) {
@@ -360,7 +358,8 @@ footer {
     }
 
     header > div {
-        margin: 10px auto 10px 0; !important;
+        margin: 10px auto 10px 0;
+    !important;
     }
 
     #logo {
@@ -382,6 +381,20 @@ footer {
 
     #aside_section {
         width: 100%;
+    }
+
+    #experiences_title {
+        flex-direction: column;
+        justify-content: left;
+        min-height: 15vh;
+    }
+
+    #experiences_title > div {
+        margin: 2px auto 2px 2px; !important;
+    }
+
+    .nav_button > span {
+        font-size: 1px; !important;
     }
 }
 

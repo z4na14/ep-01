@@ -148,6 +148,11 @@ header {
     text-decoration: none;
 }
 
+#upload_image {
+    width: 100%;
+    padding: 10px;
+}
+
 /*** Footer ***/
 footer {
     margin-top: 5px;

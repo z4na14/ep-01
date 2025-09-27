@@ -1,0 +1,260 @@
+:root {
+    --font: Fira Sans;
+    --foreground-1: rgb(0, 0, 0); /* Text */
+    --foreground-2: rgb(0, 0, 0); /* Elements */
+    --foreground-3: rgb(0, 0, 0); /* Borders */
+    --background-1: rgb(255, 255, 255);
+    --background-2: lightgray;
+}
+
+html, body {
+    font-family: var(--font), sans-serif;
+    color: var(--foreground-1);
+}
+
+label {
+    display: block;
+}
+
+hr {
+    width: 60%;
+    background-color: var(--foreground-3);
+}
+
+a:link {
+    color: var(--foreground-1);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--foreground-1);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--foreground-1);
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--foreground-1);
+    text-decoration: none;
+}
+
+/*** Global classes ***/
+.align_all_items_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_shadow_background {
+    box-shadow: 3px 4px 0 var(--foreground-2);
+    background-color: var(--background-1);
+    border-radius: 10px;
+    border: 3px var(--foreground-3) solid;
+}
+
+.simple_box_border {
+    border-radius: 10px;
+    border: 3px var(--foreground-3) solid;
+}
+
+.foreground_text {
+    background: var(--background-1);
+    text-align: left;
+    display: inline-block;
+}
+
+/*** Header ***/
+header {
+    margin: 20px;
+    border: 3px solid var(--foreground-3);
+    padding: 20px;
+}
+
+#site_title {
+    margin-right: auto;
+}
+
+#site_shortcuts {
+    display: flex;
+}
+
+#site_shortcuts div {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#logo {
+    margin: 0 0 0 auto;
+}
+
+#language_selector {
+    display: flex;
+    margin-left: 20px;
+}
+
+#language_selector > div {
+    border-right: 2px solid var(--foreground-3);;
+    padding: 8px;
+}
+
+/*** Main ***/
+
+#main {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#aside_main {
+    border: 3px solid var(--foreground-3);
+    border-radius: 10px;
+    margin-right: auto;
+    width: 30%;
+    padding: 20px;
+}
+
+#scroll_experiences {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: flex-start;*/
+    min-width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url('/images/andorra.webp');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border-radius: 10px;
+}
+
+#scroll_experiences div {
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#experiences_title {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#title_name {
+    margin: 0 auto 0 10px;
+}
+
+#title_price {
+    margin-right: 30px;
+}
+
+#experiences_description {
+    margin-right: auto;
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    padding: 20px;
+    justify-content: left;
+    align-items: center;
+    font-size: 20px;
+}
+
+#buy_button p {
+    text-align: center;
+}
+
+#description_detailed {
+    border: 3px solid var(--foreground-3);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#main_block {
+    border-radius: 10px;
+    border: 3px solid var(--foreground-3);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    width: 63%;
+}
+
+.boxes_main {
+    padding: 10px;
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.data_boxes {
+    height: 100%;
+    border: 3px solid var(--foreground-3);
+    border-radius: 10px;
+    width: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#select_box {
+    height: 30px;
+    margin-bottom: 10px;
+    width: 25%;
+}
+
+#cvv_exp_grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 50%;
+    margin-right: auto;
+}
+
+#expiration_date {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#cvv_box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#cvv_input {
+    height: 40px;
+    border: 3px solid var(--foreground-3);
+    border-radius: 10px;
+    padding-left: 10px;
+    width: 25%;
+}
+
+/*** Footer ***/
+footer {
+    margin-top: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 3px solid var(--foreground-3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#left_footer {
+    margin-right: auto;
+    margin-left: 20px;
+    padding-left: 20px;
+    width: 190px;
+}
+
+#center_footer {
+    margin: 0 auto;
+}
+

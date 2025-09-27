@@ -1,10 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <title>Mochileros sin fronteras</title>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="style/buy.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+
 <body>
+
+    <header class="align_all_items_center">
+        <div id="site_title"><b>Mochileros sin fronteras</b></div>
+        <div id="site_shortcuts">
+            <div>Inicio</div>
+            <div>Experiencias</div>
+            <div>Consejos</div>
+            <div>Foro</div>
+            <div>Contacto</div>
+        </div>
+        <div id="logo" class="align_all_items_center">
+            <img src="images/Dud.webp" alt="logo" style="width: 60px;">
+            <div id="language_selector" class="align_all_items_center box_shadow_background">
+                <div>ES</div>
+                <span class="material-icons">arrow_drop_down</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="main">
+        <aside id="aside_main">
+            <article id="images_carrousel" class="align_all_items_center">
+                <div id="scroll_experiences">
+                    <div id="experiences_title">
+                        <div id="title_name"
+                             class="simple_box_border foreground_text align_all_items_center">
+                             <p><b>Paquete Andorrano</b></p>
+                        </div>
+                        <div id="title_price"
+                             class="simple_box_border foreground_text align_all_items_center">
+                             <p><b>1200€</b></p> 
+                        </div>
+                    </div>
+
+                    <div id="experiences_description" class="simple_box_border foreground_text">
+                        ¡Libre de impuestos! Visitas al centro y a la montaña, con transporte incluido.
+                    </div>
+                </div>
+            </article>
+
+            <section id="description_detailed">
+                <h4>Descripción del pack</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </section>
+        </aside>
+
+        <div id="main_block">
+            <h2 style="margin-left: auto; margin-right: auto; margin-bottom: 10px;">Formulario de compra</h2>
+            
+            <div class="boxes_main">
+                <input type="text" placeholder="Nombre completo" class="data_boxes">
+            </div>
+
+            <div class="boxes_main">
+                <input type="text" placeholder="Correo electrónico" class="data_boxes">
+            </div>
+
+            <h3 style="margin-bottom: 10px;">Tipo de tarjeta</h3>
+            <select id="select_box">
+                <option value="">--Seleccione una opción</option>
+                <option value="Visa">Visa</option>
+                <option value="MasterCard">MasterCard</option>
+                <option value="AmericanExpress">American Express</option>
+            </select>
+
+            <div class="boxes_main">
+                <input type="text" placeholder="Nombre del titular de la tarjeta" class="data_boxes">
+            </div>
+
+            <div class="boxes_main">
+                <input type="text" placeholder="Número de la tarjeta" class="data_boxes">
+            </div>
+
+            <div id="cvv_exp_grid">
+                <div id="expiration_date" class="align_all_items_center">
+                    <h4 style="margin-top: 0; margin-bottom: 5px;">Fecha de caducidad</h4>
+                    <input type="date">
+                </div>
+
+                <div id="cvv_box">
+                    <input type="text" placeholder="CVV" id="cvv_input">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer class="align_all_items_center">
+        <div id="left_footer">
+            <p>© 2025 mochileros sin fronteras</p>
+        </div>
+        <div id="center_footer" class="align_all_items_center">
+            <p>Sobre nosotros. Política de Privacidad. Ayuda</p>
+        </div>
+        <div class="align_all_items_center" style="margin-left: auto; margin-right: 10px;"> 
+            <a href="https://www.instagram.com/p/DOodaoADW28/" target="_blank">
+                <img src="/images/icons/instagram.png"
+                alt="Logo de Instagram"
+                style="height: 55px; margin: 10px">
+            </a>
+            <a href="https://www.tiktok.com/explore" target="_blank">
+                <img src="/images/icons/tiktok.png"
+                alt="Logo de TikTok"
+                style="height: 55px; margin: 10px">
+            </a>
+            <a href="https://youtu.be/fHPysRp8FWg?si=qZZO_LRgjP2ic3f_" target="_blank">
+                <img src="/images/icons/youtube.png"
+                alt="Logo de Youtube"
+                style="height: 60px; margin: 10px">
+            </a>
+        </div>
+    </footer>
 
 </body>
 </html>

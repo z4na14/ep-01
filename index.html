@@ -41,8 +41,6 @@
                 </div>
             </article>
 
-
-
             <article id="images_carrousel" class="align_all_items_center">
                 <div class="align_all_items_center">
                     <div class="nav_button align_all_items_center box_shadow_background">
@@ -53,11 +51,12 @@
                     <div id="experiences_title">
                         <div id="title_name"
                              class="simple_box_border foreground_text align_all_items_center">
-                             <p><b>Paquete Andorrano</b></p>
+                            <p><b>Paquete Andorrano</b></p>
                         </div>
                         <div id="title_price"
                              class="simple_box_border foreground_text align_all_items_center">
-                             <p><b>1200€</b></p> </div>
+                            <b>1200€</b>
+                        </div>
                     </div>
 
                     <div id="experiences_description" class="simple_box_border foreground_text">
@@ -65,7 +64,8 @@
                     </div>
 
                     <div id="buy_button" class="box_shadow_background foreground_text align_all_items_center">
-                        <p>Comprar</p> </div>
+                        <p>Comprar</p>
+                    </div>
                 </div>
                 <div class="align_all_items_center">
                     <div class="nav_button align_all_items_center box_shadow_background">
@@ -74,12 +74,12 @@
                 </div>
             </article>
 
-            <article id="experiences_grid">
+            <article id="experiences_grid" class="align_all_items_center">
                 <div id="experiences_grid_title">
                     Experiencias de la comunidad mochilera
                 </div>
                 <div id="experiences_container">
-                    <div class="experience_shortcut">
+                    <div class="experience_shortcut simple_box_border">
                         <div class="shortcut_title">
                             Hostal en Katmandú
                         </div>
@@ -93,7 +93,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="experience_shortcut">
+                    <div class="experience_shortcut simple_box_border">
                         <div class="shortcut_title">
                             Sudamérica en bus
                         </div>
@@ -107,7 +107,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="experience_shortcut">
+                    <div class="experience_shortcut simple_box_border">
                         <div class="shortcut_title">
                             Visado para india
                         </div>
@@ -121,7 +121,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="experience_shortcut">
+                    <div class="experience_shortcut simple_box_border">
                         <div class="shortcut_title">
                             Vietnam, ruta en moto
                         </div>
@@ -135,7 +135,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="experience_shortcut">
+                    <div class="experience_shortcut simple_box_border">
                         <div class="shortcut_title">
                             Trekking en Perú
                         </div>
@@ -149,7 +149,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="experience_shortcut">
+                    <div class="experience_shortcut simple_box_border">
                         <div class="shortcut_title">
                             Safari en Tanzania
                         </div>
@@ -170,26 +170,26 @@
         <aside id="aside_section" class="align_all_items_center">
             <div id="log_field" class="align_all_items_center">
                 <form>
-                    <label class="align_all_items_center" style="width: 100%">
-                        <input type="text" placeholder="Usuario" class="flex_input_elements box_shadow_background">
+                    <label class="align_all_items_center input_field" style="width: 100%">
+                        <input type="text" placeholder="Usuario" class="flex_input_elements input_section">
                     </label>
-                    <label class="align_all_items_center" style="width: 100%">
-                        <input type="password" placeholder="Contraseña" class="flex_input_elements box_shadow_background">
+                    <label class="align_all_items_center input_field" style="width: 100%">
+                        <input type="password" placeholder="Contraseña" class="flex_input_elements input_section">
                     </label>
                     <label style="margin-top: 15px;">
                         <input type="checkbox" id="recordar_checkbox" class="box_shadow_background">
                         Recordar mis credenciales
                     </label>
                     <label class="align_all_items_center" style="width: 100%; margin-top: 20px;">
-                        <input type="submit"
-                               value="Iniciar Sesión"
-                               class="box_shadow_background submit_user"">
-                        <div class="align_all_items_center">
-                            <a href="/register.html" target="_blank" class="box_shadow_background submit_user align_all_items_center">
+                        <label id="log_button" class="box_shadow_background">
+                            <input type="submit"
+                                   value="Iniciar Sesión">
+                        </label>
+                        <label class="align_all_items_center" id="register_button">
+                            <a href="/register.html" class="box_shadow_background submit_user align_all_items_center">
                                 Registro
                             </a>
-                        </div>
-                    </label>
+                        </label>
                     </label>
                 </form>
             </div>

@@ -75,13 +75,13 @@
         <div id="main_block">
             <h2 style="margin-left: auto; margin-right: auto; margin-bottom: 10px;">Formulario de compra</h2>
             
-            <div class="boxes_main align_all_items_center">
-                <input type="text" placeholder="Nombre completo" class="data_boxes">
-            </div>
+            <label class="align_all_items_center input_field">
+                <input type="text" placeholder="Nombre completo" class="input_section boxes_main">
+            </label>
 
-            <div class="boxes_main align_all_items_center">
-                <input type="text" placeholder="Correo electrónico" class="data_boxes">
-            </div>
+            <label class="align_all_items_center input_field">
+                <input type="text" placeholder="Correo electrónico" class="input_section boxes_main">
+            </label>
 
             <div class="align_all_items_center" id="card_type">
                 <h3>Tipo de tarjeta</h3>
@@ -95,23 +95,23 @@
                 </label>
             </div>
 
-            <div class="boxes_main align_all_items_center">
-                <input type="text" placeholder="Nombre del titular de la tarjeta" class="data_boxes">
-            </div>
+            <label class="align_all_items_center input_field">
+                <input type="text" placeholder="Nombre del titular de la tarjeta" class="input_section boxes_main">
+            </label>
 
-            <div class="boxes_main align_all_items_center">
-                <input type="text" placeholder="Número de la tarjeta" class="data_boxes">
-            </div>
+            <label class="align_all_items_center input_field">
+                <input type="text" placeholder="Número de la tarjeta" class="input_section boxes_main">
+            </label>
 
             <div id="cvv_exp_grid" class="align_all_items_center">
-                <div id="expiration_date" class="align_all_items_center">
-                    <h4 style="margin-top: 0; margin-bottom: 5px;">Fecha de caducidad</h4>
-                    <input type="date">
-                </div>
+                <label id="expiration_date" class="align_all_items_center">
+                    <label style="margin-top: 0; margin-bottom: 5px;">Fecha de caducidad</label>
+                    <label><input type="date"></label>
+                </label>
 
-                <div id="cvv_box">
-                    <input type="text" placeholder="CVV" id="cvv_input">
-                </div>
+                <label id="cvv_box" class="input_field align_all_items_center">
+                    <input type="text" placeholder="CVV" id="cvv_input" class="input_section">
+                </label>
             </div>
 
             <div id="cancel_buy" class="align_all_items_center">

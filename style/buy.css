@@ -66,6 +66,26 @@ a:active {
     display: inline-block;
 }
 
+.input_field::placeholder,
+.input_icon {
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.input_field {
+    border: none;
+    background: transparent;
+}
+
+.input_section {
+    display: flex;
+    align-items: center;
+    border-radius: 28px;
+    border: 3px solid var(--foreground-3);
+    background: var(--background-2);
+    color: var(--foreground-1);
+    width: 100%;
+}
+
 /*** Header ***/
 header {
     margin: 20px;
@@ -187,20 +207,10 @@ header {
 }
 
 .boxes_main {
-    padding: 10px;
-    height: 40px;
-    margin-bottom: 10px;
+    padding: 15px 20px;
+    margin: 10px 30%;
     display: flex;
     align-items: center;
-}
-
-.data_boxes {
-    height: 100%;
-    border: 3px solid var(--foreground-3);
-    border-radius: 10px;
-    width: 400px;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 #card_type {
@@ -217,6 +227,8 @@ header {
 #cvv_exp_grid {
     display: grid;
     grid-template-columns: auto auto;
+    margin: 0 0 0 30%;
+    justify-content: left;
 }
 
 #expiration_date {
@@ -236,7 +248,7 @@ header {
     border: 3px solid var(--foreground-3);
     border-radius: 10px;
     padding-left: 10px;
-    width: 25%;
+    width: 60px;
 }
 
 #cancel_buy {

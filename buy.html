@@ -57,14 +57,17 @@
             <section id="description_detailed">
                 <h4>Descripción del pack</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Bienvenido a Andorra, el paraíso donde las tarjetas de crédito suspiran y los pulmones respiran. 
+                    Primero te llevaremos al centro, donde las tiendas libres de impuestos te recordarán que, en el fondo, el consumismo también puede ser espiritual. 
+                    Relojes, perfumes, electrónica… todo lo que nunca pensaste necesitar, pero ahora parecerá imprescindible.
+                </p>
+                <p>
+                    Cuando ya tengas la bolsa llena y la cartera más ligera, nos escapamos a la montaña. 
+                    Allí, rodeado de Pirineos majestuosos, podrás reflexionar sobre tus compras y hacer como que viniste por la naturaleza
+                </p>
+                <p>
+                    ¿Transporte? Incluido, claro. No queremos que te canses antes de subir las bolsas al autobús. 
+                    Una experiencia completa: mitad centro comercial, mitad postal alpina.
                 </p>
             </section>
         </aside>
@@ -72,33 +75,35 @@
         <div id="main_block">
             <h2 style="margin-left: auto; margin-right: auto; margin-bottom: 10px;">Formulario de compra</h2>
             
-            <div class="boxes_main">
+            <div class="boxes_main align_all_items_center">
                 <input type="text" placeholder="Nombre completo" class="data_boxes">
             </div>
 
-            <div class="boxes_main">
+            <div class="boxes_main align_all_items_center">
                 <input type="text" placeholder="Correo electrónico" class="data_boxes">
             </div>
 
-            <h3 style="margin-bottom: 10px;">Tipo de tarjeta</h3>
-            <label for="select_box">
-                <select id="select_box">
-                    <option value="">--Seleccione una opción</option>
-                    <option value="Visa">Visa</option>
-                    <option value="MasterCard">MasterCard</option>
-                    <option value="AmericanExpress">American Express</option>
-                </select>
-            </label>
+            <div class="align_all_items_center" id="card_type">
+                <h3>Tipo de tarjeta</h3>
+                <label for="select_box">
+                    <select id="select_box">
+                        <option value="">--Seleccione una opción</option>
+                        <option value="Visa">Visa</option>
+                        <option value="MasterCard">MasterCard</option>
+                        <option value="AmericanExpress">American Express</option>
+                    </select>
+                </label>
+            </div>
 
-            <div class="boxes_main">
+            <div class="boxes_main align_all_items_center">
                 <input type="text" placeholder="Nombre del titular de la tarjeta" class="data_boxes">
             </div>
 
-            <div class="boxes_main">
+            <div class="boxes_main align_all_items_center">
                 <input type="text" placeholder="Número de la tarjeta" class="data_boxes">
             </div>
 
-            <div id="cvv_exp_grid">
+            <div id="cvv_exp_grid" class="align_all_items_center">
                 <div id="expiration_date" class="align_all_items_center">
                     <h4 style="margin-top: 0; margin-bottom: 5px;">Fecha de caducidad</h4>
                     <input type="date">
@@ -106,6 +111,15 @@
 
                 <div id="cvv_box">
                     <input type="text" placeholder="CVV" id="cvv_input">
+                </div>
+            </div>
+
+            <div id="cancel_buy" class="align_all_items_center">
+                <div id="buy_box" class="align_all_items_center box_shadow_background">
+                    Comprar
+                </div>
+                <div id="cancel_box" class="align_all_items_center box_shadow_background">
+                    Borrar
                 </div>
             </div>
         </div>

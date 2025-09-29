@@ -567,12 +567,6 @@ footer {
         margin: 10px auto;
     }
 
-    #buy_button p {
-        height: 30px;
-        align-content: center;
-        justify-content: center;
-    }
-
     .nav_button > span {
         font-size: 1px; !important;
     }

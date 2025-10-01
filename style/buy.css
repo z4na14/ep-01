@@ -91,6 +91,7 @@ header {
     margin: 20px;
     border: 3px solid var(--foreground-3);
     padding: 20px;
+    border-radius: 10px;
 }
 
 #site_title {
@@ -297,5 +298,84 @@ footer {
 
 #center_footer {
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer_shortcuts {
+    flex-direction: row;
+}
+
+#footer_shortcuts > p {
+    margin: 20px 10px;
+}
+
+#newsletter_form {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 30px 0;
+}
+
+#newsletter_form label input {
+    margin: 0;
+}
+
+#social_media {
+    margin: 10px 10px 10px auto;
+}
+
+@media (max-width: 1024px) {
+
+    header {
+        flex-direction: column;
+        margin: 10vw
+    }
+
+    header > div {
+        margin: 10px auto 10px 0;
+    !important;
+    }
+
+    #logo {
+        margin: 20px auto 20px 5px;
+    }
+
+    #site_shortcuts {
+        flex-direction: column;
+    }
+
+
+
+
+
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #center_footer {
+        flex-direction: column;
+        width: 60%;
+    }
+
+    #footer_shortcuts {
+        flex-direction: column;
+    }
+
+    #footer_shortcuts > p {
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+    }
+
+    #newsletter_form {
+        flex-direction: column;
+    }
+
+    #social_media {
+        margin: 10px auto;
+    }
 }
 

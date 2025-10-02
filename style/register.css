@@ -21,6 +21,30 @@ hr {
     background-color: var(--foreground-3);
 }
 
+a:link {
+    color: var(--foreground-1);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--foreground-1);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--foreground-1);
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--foreground-1);
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
 /*** Global classes ***/
 .align_all_items_center {
     display: flex;
@@ -56,6 +80,10 @@ header {
     margin-right: 10px;
 }
 
+#logo {
+    margin: 0 0 0 auto;
+}
+
 #language_selector {
     display: flex;
     margin-left: 20px;
@@ -65,6 +93,7 @@ header {
     border-right: 2px solid var(--foreground-3);;
     padding: 8px;
 }
+
 
 /*** Main section ***/
 #main {

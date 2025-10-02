@@ -269,6 +269,8 @@ footer {
 
     #newsletter_form {
         flex-direction: column;
+        width: 60%;
+        margin: 10px 0;
     }
 
     #social_media {

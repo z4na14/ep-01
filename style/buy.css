@@ -344,11 +344,6 @@ footer {
         flex-direction: column;
     }
 
-
-
-
-
-
     footer {
         flex-direction: column;
         align-items: center;
@@ -372,6 +367,8 @@ footer {
 
     #newsletter_form {
         flex-direction: column;
+        width: 60%;
+        margin: 10px 0;
     }
 
     #social_media {

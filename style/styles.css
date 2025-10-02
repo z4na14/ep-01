@@ -300,8 +300,7 @@ header {
     flex-direction: column;
     width: 34%;
     justify-content: flex-start;
-    margin: 10px;
-    padding: 10px;
+    margin: 30px;
 }
 
 #aside_section > h2 {
@@ -390,6 +389,12 @@ header {
     width: 30%;
 }
 
+#user_photo > img {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
 #log_out_box {
     border: 3px solid var(--foreground-3);
     padding: 10px;
@@ -429,12 +434,11 @@ header {
     height: 40px;
     display: flex;
     align-items: center;
-    margin: 0 0 10px 30px;
+    margin: 0 auto 10px 30px;
 }
 
 #advice_box {
     height: 100%;
-    width: 250px;
 }
 
 #advice_section {
@@ -444,7 +448,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 20px;
+    margin: 0 auto 20px 0;
 }
 
 #advice_field {
@@ -556,6 +560,7 @@ footer {
 
     #aside_section {
         width: 100%;
+        margin: 0;
     }
 
     #experiences_title {
@@ -626,15 +631,40 @@ footer {
     #advice_section {
         flex-direction: column;
         height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    #advice_title {
+        width: 80%;
+        margin: 20px 0;
+        padding: 0;
     }
 
     #advice_field {
-        margin: 0 auto 0 0;
+        margin: 5px 0 10px 0;
+        width: 90%;
+        padding: 0;
     }
 
     #send_button {
         margin: 10px auto 0 0;
         height: 30px;
+    }
+
+    #user_photo > img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #log_out_box {
+        font-size: 15px;
+        margin-left: 10px;
+        width: 100px;
+    }
+
+    #search {
+        width: 70%;
     }
 
     footer {
@@ -660,6 +690,8 @@ footer {
 
     #newsletter_form {
         flex-direction: column;
+        width: 60%;
+        margin: 10px 0;
     }
 
     #social_media {

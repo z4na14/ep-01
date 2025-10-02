@@ -152,19 +152,19 @@ header {
     border-radius: 10px;
 }
 
-#scroll_experiences div {
+#experiences_title {
     height: 40px;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#experiences_title {
-    display: flex;
     flex-direction: row;
     margin-top: 20px;
     width: 100%;
+}
+
+#experiences_title > div {
+    padding: 2px 8px;
 }
 
 #title_name {
@@ -342,6 +342,57 @@ footer {
 
     #site_shortcuts {
         flex-direction: column;
+    }
+
+    #main {
+        flex-direction: column;
+        padding: 0;
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #aside_main {
+        width: 80%;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    #main_block {
+        width: 70%;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    #experiences_title {
+        padding: 0;
+    }
+
+    #experiences_title > div {
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    #experiences_description {
+        height: auto;
+        padding: 5px;
+        margin: 40px auto;
+    }
+
+    #main_block {
+        width: 90%;
+    }
+
+    .boxes_main {
+        margin: 10px 5px;
+    }
+
+    #cvv_exp_grid {
+        display: flex;
+        flex-direction: column;
+        margin: 2px 5px;
     }
 
     footer {

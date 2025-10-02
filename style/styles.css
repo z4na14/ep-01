@@ -1,15 +1,17 @@
 :root {
     --font: Fira Sans;
     --foreground-1: rgb(0, 0, 0); /* Text */
-    --foreground-2: rgb(0, 0, 0); /* Elements */
-    --foreground-3: rgb(0, 0, 0); /* Borders */
+    --foreground-2: rgb(32, 234, 160); /* Elements */
+    --foreground-3: rgb(11, 121, 90); /* Borders */
     --background-1: rgb(255, 255, 255);
-    --background-2: lightgray;
+    --background-2: #e3e3e3;
+    --background-3: rgba(255, 255, 255, 0.75);
 }
 
-html, body {
+html{
     font-family: var(--font), sans-serif;
     color: var(--foreground-1);
+    background-image: url("../images/background.webp");
 }
 
 label {
@@ -96,6 +98,7 @@ header {
     border: 3px solid var(--foreground-3);
     padding: 20px;
     border-radius: 10px;
+    background: var(--background-3);
 }
 
 #site_title {
@@ -163,6 +166,8 @@ header {
     width: 100%;
     border: 3px solid var(--foreground-3);
     border-radius: 10px;
+    background: var(--background-3);
+
 }
 
 #images_carrousel p {
@@ -211,12 +216,14 @@ header {
     margin: 0 auto 0 30px;
     font-size: 22px;
     padding: 10px 20px;
+    background: var(--background-3);
 }
 
 #title_price {
     margin: 0 30px 0 auto;
     padding: 8px 12px;
     font-size: 20px;
+    background: var(--background-3);
 }
 
 #experiences_description {
@@ -229,6 +236,7 @@ header {
     justify-content: left;
     align-items: center;
     font-size: 18px;
+    background: var(--background-3);
 }
 
 #buy_button {
@@ -265,6 +273,8 @@ header {
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr 5fr;
+    background: var(--background-3);
+
 }
 
 .shortcut_title {
@@ -301,6 +311,7 @@ header {
     width: 34%;
     justify-content: flex-start;
     margin: 30px;
+    background: var(--background-3);
 }
 
 #aside_section > h2 {
@@ -486,6 +497,7 @@ footer {
     border-radius: 10px;
     display: flex;
     flex-direction: row;
+    background: var(--background-3);
 }
 
 #left_footer {
@@ -528,6 +540,10 @@ footer {
     font-size: 30px; !important;
 }
 */
+
+@media (max-width: 600px) {
+
+}
 
 @media (max-width: 768px) {
 
@@ -601,6 +617,7 @@ footer {
 
     #experiences_grid_title {
         margin: 10px 0 25px 0;
+        text-shadow: 0 0 2px var(--foreground-3);
     }
 
     #experiences_container {
